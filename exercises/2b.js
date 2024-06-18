@@ -4,6 +4,7 @@
  */
 function listNames(recipes) {
   // code here
+  return recipes.map(recipe => recipe.name)
 }
 
 // array provided for debugging:
@@ -27,8 +28,18 @@ const recipes = [
 export default listNames
 
 /*
-Similar to 2a 
-Input array, output is array with containg strips of names or recipies
-So 'Spaghetti Bolognese' & 'Vegetable Stir Fry'
-Transform objects into strings- tech docs with map 
+Similar to 2a in that it needs to go through an array of two objects
+Input array, output is array containing strings (the names of the recipies)
+So results should be 'Spaghetti Bolognese' & 'Vegetable Stir Fry'
+
+--
+
+Transform objects into strings- tech docs: transforming with map;
+select particular properties from each object
+
+const bookTitles = books.map(book => book.title)
+Output is book titles 
+
+Map is a function that transforms objects 
+Find name, don't return anything else 
 */
