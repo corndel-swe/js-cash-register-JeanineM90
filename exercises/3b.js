@@ -3,6 +3,21 @@
  */
 function countServings(recipeBook) {
   // code here
+  /* use reduce? the sum of a list in tech docs example:
+
+  const numbers = [1, 2, 3, 4, 5]
+
+  function sum(accumulator, currentValue) {
+  return accumulator + currentValue
+}
+  const total = numbers.reduce(sum, 0)
+
+  Or
+  const total = numbers.reduce((acc, curr) => acc + curr, 0)
+  */
+
+
+
 }
 
 // we've provided a sample object for debugging:
@@ -31,14 +46,13 @@ export default countServings
 /*
 Similar to 2a- loop: count all of the servings of the recipes in the recipe book 
 The values are 4 & 2, the key is "servings", the object is recipe book 
-Return the sum of the values
-e.g 
+Return the sum of the values which will be 6 
+However 2a checks a boolean, we now need to sum numbers 
 
-  let count = 0
-  for (let recipe of recipes) { // loop through the recipes in the object
-    if (recipe.isVegetarian == true) {
-      count++
-    }
-  }
-  return count
+--
+
+Tech Docs for array reduce:
+function aggregateFunction(accumulator, currentValue) {
+}
+const result = list.reduce(aggregateFunction, initialValue)
 */
