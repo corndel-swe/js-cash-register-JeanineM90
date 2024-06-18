@@ -27,3 +27,18 @@ const recipeBook = {
 
 // don't change below
 export default countServings
+
+/*
+Similar to 2a- loop: count all of the servings of the recipes in the recipe book 
+The values are 4 & 2, the key is "servings", the object is recipe book 
+Return the sum of the values
+e.g 
+
+  let count = 0
+  for (let recipe of recipes) { // loop through the recipes in the object
+    if (recipe.isVegetarian == true) {
+      count++
+    }
+  }
+  return count
+*/
