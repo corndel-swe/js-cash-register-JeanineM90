@@ -25,3 +25,10 @@ const recipes = [
 
 // don't change below
 export default listNames
+
+/*
+Similar to 2a 
+Input array, output is array with containg strips of names or recipies
+So 'Spaghetti Bolognese' & 'Vegetable Stir Fry'
+Transform objects into strings- tech docs with map 
+*/
