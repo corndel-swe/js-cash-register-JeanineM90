@@ -4,7 +4,11 @@
  */
 function lastRecipe(recipeBook) {
   // code here
+  // return (recipeBook[1].name)
+  // return the object.array[use length to return last recipe of array].key 
+  return recipeBook.recipes[recipeBook.recipes.length - 1]?.name
 }
+// this was failing without the "?", this is used in conditional statements 
 
 // we've provided a sample object for debugging:
 const recipeBook = {
@@ -28,3 +32,12 @@ const recipeBook = {
 
 // don't change below
 export default lastRecipe
+
+/*
+Return only string 'Vegetable Stir Fry', the name of recipe 2 
+--
+Object nesting in tech docs - chaining:
+console.log(author.books[0].title) 
+'The Handmaid's Tale' 
+Which is the first in the list 
+*/
